@@ -1,3 +1,18 @@
 body{
-    background-color: pink;
+    background-color: #FCE2B0;
+}
+
+#vintage-frame {
+    width: 300px;
+    height: 200px;
+    background-image: url("https://static.vecteezy.com/system/resources/thumbnails/042/535/930/small_2x/ai-generated-golden-wooden-frame-isolated-on-transparent-background-patterned-and-vintage-picture-frame-format-old-wide-ornamental-baroque-picture-frame-png.png");
+    background-size: cover;
+}
+
+#van-gogh {
+    width: 300px;
+    height: 200px;
+    background-image: url(https://archive.artic.edu/van-gogh-bedrooms/VanGogh--Bedroom--1888--VanGoghMuseumAmsterdam--1400.jpg);
+    background-size: cover;
+    overflow: hidden;
 }

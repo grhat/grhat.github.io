@@ -1,18 +1,155 @@
-body{
-    background-color: #FCE2B0;
+body {
+    position: absolute;
+    width: 1920px;
+    height: 1080px;
+    background-color: #EBF1FF;
+    background-size: 15px 15px;
+    background-image:
+    linear-gradient(to right, #468BC3 0%, transparent 1px, transparent 50%, #468BC3 50%, transparent calc(50% + 1px)),
+    linear-gradient(to bottom, #468BC3 0%, transparent 1px, transparent 50%, #468BC3 50%, transparent calc(50% + 1px));
+    z-index: 10000;
 }
 
-#vintage-frame {
-    width: 300px;
-    height: 200px;
-    background-image: url("https://static.vecteezy.com/system/resources/thumbnails/042/535/930/small_2x/ai-generated-golden-wooden-frame-isolated-on-transparent-background-patterned-and-vintage-picture-frame-format-old-wide-ornamental-baroque-picture-frame-png.png");
-    background-size: cover;
+h1 {
+    text-align: center;
+    font-size: 90px;
+    line-height: 3;
 }
 
-#van-gogh {
-    width: 300px;
-    height: 200px;
-    background-image: url(https://archive.artic.edu/van-gogh-bedrooms/VanGogh--Bedroom--1888--VanGoghMuseumAmsterdam--1400.jpg);
+.postcard-shadow1 {
+    position: absolute;
+    width: 350px;
+    height: 250px;
+    top: 205px;  
+    background-color: black;
+    opacity: 50%;  
+}
+
+.postcard-shadow2 {
+    position: absolute;
+    width: 350px;
+    height: 250px;
+    top: 505px;  
+    background-color: black;
+    opacity: 50%;  
+}
+
+.postcard-shadow3 {
+    position: absolute;
+    width: 350px;
+    height: 250px;
+    top: 805px;  
+    background-color: black;
+    opacity: 50%;  
+}
+
+.postcard1 {
+    position: absolute;
+    width: 350px;
+    height: 250px;
+    top: 200px;
     background-size: cover;
+    background-repeat: no-repeat;
     overflow: hidden;
+}
+
+.postcard2 {
+    position: absolute;
+    width: 350px;
+    height: 250px;
+    top: 500px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    overflow: hidden;
+}
+
+.postcard3 {
+    position: absolute;
+    width: 350px;
+    height: 250px;
+    top: 800px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    overflow: hidden;
+}
+
+#london-shadow {
+    left: 305px;
+}
+
+#london {
+    left: 300px;
+    background-image: url("https://media4.allnumis.com/1189/london-701-big-ben-and-london-eye_1189_56644804fdd74b8L.jpg");
+}
+
+#edinburgh-shadow {
+    left: 705px;
+}
+
+#edinburgh {
+    left: 700px;
+    background-image: url("https://media4.allnumis.com/4083/scotia-edimburg-castle_4083_7453254335cd480L.jpg");
+}
+
+#lisbon-shadow{
+    left: 1105px;
+}
+
+#lisbon {
+    left: 1100px;
+    background-image: url("https://en.sporvognsrejser.dk/foto/s/postcard-lisbon-colinas-tour-with-railcar-5-on-praca-do-cormercio-2001.webp");
+}
+
+#budapest-shadow{
+    left: 305px;
+}
+
+#budapest {
+    left: 300px;
+    background-image: url("https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi8ZqC31Pmkp6hXrbqGDrWByR1exDFHoPtFOjH4Wgv5rwx8ORG168YC7fp2AW19E0UcHm-h47PUauGpyrovUVaMAE9apuWhE4RzkMlB4NRCKvs11DY7tPyjvNsm9oniQcgYL8TJcJnlYvg/s1600/HUNGARY+Budapest+parliament.bmp");
+}
+
+#vienna-shadow{
+    left: 705px;
+}
+
+#vienna {
+    left: 700px;
+    background-image: url("https://thewell-travelledpostcard.com/wp-content/uploads/2014/09/vienna-postcard.jpg");
+}
+
+#amsterdam-shadow{
+    left: 1105px;
+}
+
+#amsterdam {
+    left: 1100px;
+    background-image: url("https://i.ebayimg.com/images/g/qf4AAOSwk3hlgKI2/s-l400.jpg");
+}
+
+#brussels-shadow{
+    left: 305px;
+}
+
+#brussels {
+    left: 300px;
+    background-image: url("https://storage.googleapis.com/hippostcard/p/ec82b3a74eade1665958d10e02bfe8dd-800.jpg");
+}
+
+#barcelona-shadow{
+    left: 705px;
+}
+
+#barcelona {
+    left: 700px;
+    background-image: url("https://img.geocaching.com/waymarking/display/6bf9d0ec-eea6-42d8-8691-b50bf7815d73.jpg");
+}
+
+#venice-shadow{
+    left: 1105px;
+}
+
+#venice {
+    left: 1100px;
+    background-image: url("https://markspostcards.wordpress.com/wp-content/uploads/2015/02/scan_20150217-47.jpg");
 }

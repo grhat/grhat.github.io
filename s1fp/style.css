@@ -1,19 +1,22 @@
 body {
-    position: absolute;
-    margin-left: 75px;
-    margin-right: 50px;
-    margin-top: 75px;
+    /* position: absolute; */
     background-color: #EBF1FF;
     background-size: 15px 15px;
     background-image:
     linear-gradient(to right, #468BC3 0%, transparent 1px, transparent 50%, #468BC3 50%, transparent calc(50% + 1px)),
     linear-gradient(to bottom, #468BC3 0%, transparent 1px, transparent 50%, #468BC3 50%, transparent calc(50% + 1px));
-    z-index: 10000;
+    /* z-index: 10000; */
 }
 
 h1 {
     text-align: center;
     font-size: 50px;
+}
+
+.floatwrapper {
+    max-width: 1300px;
+    margin-left: 200px;
+    margin-right: 200px;
 }
 
 .floatl {
@@ -25,8 +28,20 @@ h1 {
 
 .postcard {
     position: absolute;
+    margin: 0 auto;
     width: 350px;
     height: 250px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, .6);
+}
+
+.postcard-big {
+    /* position: absolute; */
+    margin: 0 auto;
+    width: 700px;
+    height: 500px;
     background-size: cover;
     background-repeat: no-repeat;
     overflow: hidden;
@@ -71,4 +86,9 @@ h1 {
 
 #venice {
     background-image: url("https://markspostcards.wordpress.com/wp-content/uploads/2015/02/scan_20150217-47.jpg");
+}
+
+#blank  {
+    top: 550px;
+    background-image: url("https://media.istockphoto.com/id/184871157/photo/retro-background-image-of-an-vintage-antique-postcard-back.jpg?s=612x612&w=0&k=20&c=Zv6s_pHnKdpr586cMHZFczI_steTgp0osPA_FCxYJPA=");
 }

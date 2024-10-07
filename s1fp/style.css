@@ -1,11 +1,10 @@
 body {
     /* position: absolute; */
     background-color: #EBF1FF;
-    background-size: 15px 15px;
+    background-size: 10px 10px;
     background-image:
     linear-gradient(to right, #468BC3 0%, transparent 1px, transparent 50%, #468BC3 50%, transparent calc(50% + 1px)),
     linear-gradient(to bottom, #468BC3 0%, transparent 1px, transparent 50%, #468BC3 50%, transparent calc(50% + 1px));
-    /* z-index: 10000; */
 }
 
 #title {
@@ -14,10 +13,56 @@ body {
     text-align: center;
   }
 
+#header1 {
+    font-size: 75px;
+    font-family: 'Bowlby One SC';
+    text-align: center;
+    letter-spacing: 15px;
+    color: darkblue;
+  }
+
+#header2 {
+    font-size: 75px;
+    font-family: 'Bowlby One SC';
+    text-align: center;
+    letter-spacing: 15px;
+    color: darkolivegreen;
+  }
+
+  #header3 {
+    font-size: 75px;
+    font-family: 'Bowlby One SC';
+    text-align: center;
+    letter-spacing: 15px;
+    color: darkred;
+  }
+
 #letter {
     font-size: 20px;
     font-family: "Nothing You Could Do";
     padding: 10px;
+  }
+
+a:link { 
+    text-decoration: none; 
+  } 
+
+a:visited { 
+    text-decoration: none;
+    color: inherit;
+  } 
+
+a:hover { 
+    text-decoration: none; 
+    color: #F8C537;
+    /* background: url("https://i.ebayimg.com/images/g/0HUAAOSwNYde0oxC/s-l1200.jpg"); */
+    /* background-size: contain; */
+    /* -webkit-background-clip: text; */
+    /* -webkit-text-fill-color: transparent; */
+  } 
+
+a:active { 
+    text-decoration: none; 
   }
 
 .floatwrapper {
@@ -39,6 +84,11 @@ body {
     float: left;
 }
 
+.left-container {
+    margin-left: 150px;
+    float: left;
+}
+
 .postcard {
     position: absolute;
     margin: 0 auto;
@@ -56,7 +106,6 @@ body {
 
 .postcard-big {
     /* position: absolute; */
-    margin: 0 auto;
     width: 700px;
     height: 500px;
     background-size: cover;
@@ -65,49 +114,238 @@ body {
     box-shadow: 5px 5px 10px rgba(0, 0, 0, .6);
 }
 
+.collage1 {
+    margin-left: 100px;
+    margin-right: 50px;
+    margin-bottom: 20px;
+    width: 300px;
+    height: 400px;
+    background-size: cover;
+    float: left;
+}
+
+.collage2 {
+    margin-top: 40px;
+    width: 500px;
+    height: 300px;
+    background-size: cover;
+    float: left;
+}
+
+.collage3 {
+    margin-right: 280px;
+    margin-top: 30px;
+    width: 300px;
+    height: 400px;
+    background-size: cover;
+    float: right;
+}
+
+#stars {
+    margin-left: 100px;
+    margin-bottom: 20px;
+    width: 300px;
+    height: 100px;
+    background-image: url("https://images.vexels.com/content/234958/preview/stars-decoration-doodle-d2adea.png");
+    background-size: contain;
+    clear: left;
+}
+
+#stars:hover {
+    transform: rotate(5deg);
+}
+
 #london {
     background-image: url("https://media4.allnumis.com/1189/london-701-big-ben-and-london-eye_1189_56644804fdd74b8L.jpg");
+}
+
+#nottinghill {
+    background-image: url("https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhmXLzj6P99VpedleAXjdRfKgALsN6cJPmtroRontkyelnaImtZMSn6jDqwnL5W4pXmUQ3BmpQVS4kiNCd1WIX_ZJCxCbxwyrXw_clSeF22pbslS9_TijczcqJIDumb-LvJE5zdgU56HMks/s1600/bluedoor.jpg");
+}
+
+#bridge {
+    background-image: url("https://i.pinimg.com/564x/6d/87/70/6d87709f08390de731fa4a8d9b164348.jpg");
+}
+
+#borough {
+    background-image: url("https://www.guidelondon.org.uk/wp-content/uploads/2023/12/Entrance-to-Borough-Market-in-London.jpeg");
+}
+
+#bigben {
+    background-image: url("https://static.vecteezy.com/system/resources/previews/008/549/845/non_2x/big-ben-in-london-transparent-png.png");
 }
 
 #edinburgh {
     background-image: url("https://media4.allnumis.com/4083/scotia-edimburg-castle_4083_7453254335cd480L.jpg");
 }
 
+#victoriast {
+    background-image: url("https://i.pinimg.com/564x/8c/92/a1/8c92a19acee6c47357930721c1c044b4.jpg");
+}
+
+#monument {
+    background-image: url("https://i.pinimg.com/736x/ba/18/ad/ba18adab04f41cca4f00a4cbda28bcaa.jpg");
+}
+
+#arthurseat {
+    background-image: url("https://www.luxembourgmeetstheworld.com/wp-content/uploads/2017/07/IMG_8032-scaled.jpg");
+}
+
+#cow {
+    background-image: url("https://static.vecteezy.com/system/resources/previews/027/247/120/original/highland-cow-isolated-on-transparent-background-ai-generated-png.png");
+}
+
 #lisbon {
     background-image: url("https://en.sporvognsrejser.dk/foto/s/postcard-lisbon-colinas-tour-with-railcar-5-on-praca-do-cormercio-2001.webp");
+}
+
+#tram {
+    background-image: url("https://i.pinimg.com/564x/3f/03/6b/3f036b82783206b58d626ef91f1f55bb.jpg");
+}
+
+#monastery {
+    background-image: url("https://i.pinimg.com/564x/c8/03/de/c803de006a85802cfcf527d030bef082.jpg");
+}
+
+#sintra {
+    background-image: url("https://d1bv4heaa2n05k.cloudfront.net/user-images/1568203130469/shutterstock-387794470_main_1568203192185.jpeg");
+}
+
+#pastel {
+    background-image: url("https://png.pngtree.com/png-clipart/20231015/original/pngtree-pastel-de-nata-de-picture-image_13166816.png");
 }
 
 #budapest {
     background-image: url("https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi8ZqC31Pmkp6hXrbqGDrWByR1exDFHoPtFOjH4Wgv5rwx8ORG168YC7fp2AW19E0UcHm-h47PUauGpyrovUVaMAE9apuWhE4RzkMlB4NRCKvs11DY7tPyjvNsm9oniQcgYL8TJcJnlYvg/s1600/HUNGARY+Budapest+parliament.bmp");
 }
 
+#parliament {
+    background-image: url("https://i.pinimg.com/736x/88/b1/0e/88b10e526c6da22dc736d5dca36790f5.jpg");
+}
+
+#bar {
+    background-image: url("https://i.pinimg.com/736x/b5/84/7f/b5847f4b21ceaecebc4e6d789e64e6fe.jpg");
+}
+
+#church {
+    background-image: url("https://i.pinimg.com/564x/c4/22/41/c422416268a33a6eefd8aa6fc33f23a6.jpg");
+}
+
+#stamp {
+    background-image: url("https://m.media-amazon.com/images/I/81nBAU8eMVL._AC_UF894,1000_QL80_.jpg");
+}
+
 #vienna {
     background-image: url("https://thewell-travelledpostcard.com/wp-content/uploads/2014/09/vienna-postcard.jpg");
+}
+
+#palace {
+    background-image: url("https://i.pinimg.com/736x/fa/9f/7f/fa9f7f83e74c0d19def674329d9bff38.jpg");
+}
+
+#kiss {
+    background-image: url("https://www.gustav-klimt.com/assets/img/paintings/The-Kiss.jpg");
+}
+
+#stephen {
+    background-image: url("https://www.nanocathedral.eu/wp-content/uploads/2017/10/austria-vienna-st-stephens-cathedral-towers.jpg");
+}
+
+#eggs {
+    background-image: url("https://static.vecteezy.com/system/resources/previews/023/337/404/non_2x/ai-generative-colorful-easter-egg-transparent-free-png.png");
 }
 
 #amsterdam {
     background-image: url("https://i.ebayimg.com/images/g/qf4AAOSwk3hlgKI2/s-l400.jpg");
 }
 
+#houses {
+    background-image: url("https://admin.expatica.com/nl/wp-content/uploads/sites/3/2023/11/leaning-houses-amsterdam.jpg");
+}
+
+#sunflowers {
+    background-image: url("https://upload.wikimedia.org/wikipedia/commons/4/46/Vincent_Willem_van_Gogh_127.jpg");
+}
+
+#canal {
+    background-image: url("https://images.squarespace-cdn.com/content/v1/549d41a3e4b003c6ce131926/1484739525219-XFHIY3QWYDFPX7RQ962A/Amsterdam-562-20160902.jpg");
+}
+
+#tulips {
+    background-image: url("https://i.pinimg.com/originals/d3/4a/f5/d34af50d1b8853cd73f21c0782ad42de.png");
+}
+
 #brussels {
     background-image: url("https://storage.googleapis.com/hippostcard/p/ec82b3a74eade1665958d10e02bfe8dd-800.jpg");
+}
+
+#chocolate {
+    background-image: url("https://i.pinimg.com/564x/b3/41/4e/b3414e5744050d7b2762e61f1e0ca1bc.jpg");
+}
+
+#fountain {
+    background-image: url("https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjg7jOHkxH_udWCLak2zPJXslqPSI9yfgIMLnQkuGdknKsa6VOU7-HxJHJbonSgIguqd0Ld5Ys69zzsom3NNP0JIJQbiKhA0_Ix3fuEdbaOx4RuZ7uEzYlJ40RgfK9sQpA_BjCwDR6D-Cc/s1600/DSCF8559.jpg");
+}
+
+#plaza {
+    background-image: url("https://www.brussels.be/sites/default/files/styles/article_image__hd_/public/grand-place-photo_1.jpg?itok=g4nOYCT2");
+}
+
+#waffle {
+    background-image: url("https://png.pngtree.com/png-vector/20230906/ourmid/pngtree-viennese-belgian-waffle-with-chocolate-png-image_9997405.png");
 }
 
 #barcelona {
     background-image: url("https://img.geocaching.com/waymarking/display/6bf9d0ec-eea6-42d8-8691-b50bf7815d73.jpg");
 }
 
+#sagrada {
+    background-image: url("https://i.redd.it/tfpicecf9gj61.jpg");
+}
+
+#picasso {
+    background-image: url("https://cms.througheternity.com/upload/CONF83/20221129/the_wait_margot_picasso_museum_barcelona.jpeg");
+}
+
+#guell {
+    background-image: url("https://a.storyblok.com/f/53624/4590x3060/fa8fcabf92/park-guell-barcelona-spain_diego-allen-cxi_tf5cpeq-unsplash.jpg");
+}
+
+#sagrada2 {
+    background-image: url("https://png.pngtree.com/png-vector/20240430/ourmid/pngtree-la-sagrada-familia-barcelona-spain-png-image_12343470.png");
+}
+
 #venice {
     background-image: url("https://markspostcards.wordpress.com/wp-content/uploads/2015/02/scan_20150217-47.jpg");
+}
+
+#street {
+    background-image: url("https://i.pinimg.com/564x/3f/13/f9/3f13f928ca8679bb4c92bf2fe1303187.jpg");
+}
+
+#stmarks {
+    background-image: url("https://i.pinimg.com/564x/76/c5/9a/76c59ad2118f13a9b46bb52afa50598c.jpg");
+}
+
+#rialto {
+    background-image: url("https://visit-venice-italy.global.ssl.fastly.net/pics/bridges_venice/rialto-bridge-in-venice-italy-06.jpg");
+}
+
+#boat {
+    background-image: url("https://png.pngtree.com/png-vector/20240824/ourmid/pngtree-ornate-venetian-gondola-clipart-illustration-isolated-on-black-background-png-image_13599140.png");
 }
 
 #blank  {
     background-image: url("https://t4.ftcdn.net/jpg/00/83/62/57/360_F_83625743_PlG3dTH3zPY7GbYdhmJ1oFizTj2tjHjz.jpg");
 }
 
-#arrow {
-    width: 200px;
-    height: 100px;
-    background-image: url("https://www.citypng.com/public/uploads/preview/black-outline-drawing-arrow-3d-pointing-right-704081694779803qxk0myh8iz.png");
-    background-size: cover;
+#next {
+    position: fixed;
+    width: 250px;
+    height: 200px;
+    bottom: 0;
+    right: 0;
+    background-image: url("https://media4.giphy.com/media/eYJoFOh8Ac793sHp53/giphy.gif?cid=6c09b95211ldj37ijebotmbki1nx5vm4lcvzq3swdzvgcp87&ep=v1_internal_gif_by_id&rid=giphy.gif&ct=s");
+    background-size: contain;
+    background-repeat: no-repeat;
 }

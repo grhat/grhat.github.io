@@ -7,6 +7,25 @@ body {
     linear-gradient(to bottom, #468BC3 0%, transparent 1px, transparent 50%, #468BC3 50%, transparent calc(50% + 1px));
 }
 
+.webringlink {
+    position: fixed;
+    top: 25px;
+    right: 25px;
+}
+
+#webringimage {
+    width: 50px;
+    height: auto;
+}
+
+#iconText {
+    top: 75px;
+    width: 50px;
+    font-size: 10px;
+    font-family: 'Bowlby One SC';
+    text-align: center;
+    }
+
 #title {
     font-size: 100px;
     font-family: "Londrina Shadow", sans-serif;
@@ -67,8 +86,7 @@ a:active {
 
 .floatwrapper {
     max-width: 1300px;
-    margin-left: 200px;
-    margin-right: 200px;
+    margin: 0 auto;
 }
 
 .floatl {
@@ -138,7 +156,7 @@ a:active {
     width: 300px;
     height: 400px;
     background-size: cover;
-    float: right;
+    float: left;
 }
 
 #stars {

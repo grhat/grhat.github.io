@@ -1,0 +1,23 @@
+body {
+    background-color: skyblue;
+}
+
+#title {
+    font-size: calc(50px + 4vw);
+    font-family: "Caveat";
+    font-optical-sizing: auto;
+    font-style: normal;
+    text-align: center;
+}
+
+#tree {
+    width: 30vw;
+    height: 25vw;
+    margin-top: 5vw;
+}
+
+#house {
+    width: 30vw;
+    height: 30vw;
+    margin-top: 5vw;
+}

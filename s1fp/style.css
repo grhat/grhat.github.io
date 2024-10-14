@@ -9,7 +9,7 @@ body {
 
 .webringlink {
     position: fixed;
-    top: 25px;
+    bottom: 25px;
     right: 25px;
 }
 
@@ -19,7 +19,7 @@ body {
 }
 
 #iconText {
-    top: 75px;
+    bottom: 75px;
     width: 50px;
     font-size: 10px;
     font-family: 'Bowlby One SC';
@@ -103,7 +103,7 @@ a:active {
 }
 
 .left-container {
-    margin-left: 150px;
+    margin: 0 auto;
     float: left;
 }
 
@@ -151,7 +151,7 @@ a:active {
 }
 
 .collage3 {
-    margin-right: 280px;
+    /* margin-right: 280px; */
     margin-top: 30px;
     width: 300px;
     height: 400px;

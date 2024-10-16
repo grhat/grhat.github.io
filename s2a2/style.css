@@ -1,9 +1,25 @@
 body {
-    background-color: skyblue;
+    background-color: lightblue;
+}
+
+.floatwrapper {
+    margin: 0 auto;
+    justify-content: center;
+    display: flex;
+}
+
+.floatl {
+    width: 30vw;
+    height: 30vw;
+    /* border: 1px solid #000000; */
+    /* float: left; */
+    justify-content: center;
+    align-items: center;
+    display: flex;
 }
 
 #title {
-    font-size: calc(50px + 4vw);
+    font-size: calc(25px + 4vw);
     font-family: "Caveat";
     font-optical-sizing: auto;
     font-style: normal;
@@ -12,12 +28,26 @@ body {
 
 #tree {
     width: 30vw;
-    height: 25vw;
-    margin-top: 5vw;
+    height: auto;
 }
 
-#house {
-    width: 30vw;
-    height: 30vw;
-    margin-top: 5vw;
+#leaves {
+    width: 20vw;
+    height: auto;
 }
+
+#dog-house {
+    width: 15vw;
+    height: auto;
+}
+
+/* @media only screen and (max-width: 1000px) {
+    #tree {
+        width: 100vw;
+        height: auto;
+    }
+
+    #leaves {
+        margin: 
+    }
+  } */

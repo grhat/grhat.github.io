@@ -26,9 +26,40 @@ body {
     padding: 5vh;
 }
 
+input {
+    display: none;
+  }
+
 #leaves {
     width: 25vw;
     height: auto;
+}
+
+#leaves:hover {
+    animation: shake 1.5s;
+    animation-iteration-count: infinite;
+}
+
+#leaves-label {
+    display: block;
+    position: relative;
+    width: 25vw;
+    height: auto;
+    background-color: lightblue;
+    border: 1px black solid;
+}
+  
+#pigpen {
+    position: absolute;
+    width: 25vw;
+    height: auto;
+    background-color: lightblue;
+    border: 1px black solid;
+    opacity: 0;
+}
+  
+#leaves:checked ~ #leaves-label > #pigpen {
+    opacity: 1;
 }
 
 #tree {
@@ -41,23 +72,36 @@ body {
     animation-iteration-count: infinite;
 }
 
-@keyframes shake {
-    0% { transform: translate(1px, 1px) rotate(0deg); }
-    10% { transform: translate(-1px, -2px) rotate(-1deg); }
-    20% { transform: translate(-3px, 0px) rotate(1deg); }
-    30% { transform: translate(3px, 2px) rotate(0deg); }
-    40% { transform: translate(1px, -1px) rotate(1deg); }
-    50% { transform: translate(-1px, 2px) rotate(-1deg); }
-    60% { transform: translate(-3px, 1px) rotate(0deg); }
-    70% { transform: translate(3px, 1px) rotate(-1deg); }
-    80% { transform: translate(-1px, -1px) rotate(1deg); }
-    90% { transform: translate(1px, 2px) rotate(0deg); }
-    100% { transform: translate(1px, -2px) rotate(-1deg); }
+#tree-label {
+    display: block;
+    position: relative;
+    width: 30vw;
+    height: auto;
+    background-color: lightblue;
+    border: 1px black solid;
+}
+
+#woodstock {
+    position: absolute;
+    width: 30vw;
+    height: auto;
+    background-color: lightblue;
+    border: 1px black solid;
+    opacity: 0;
+}
+
+#tree:checked ~ #tree-label > #woodstock {
+    opacity: 1;
 }
 
 #house {
     width: 15vw;
     height: auto;
+}
+
+#house:hover {
+    animation: shake 1.5s;
+    animation-iteration-count: infinite;
 }
 
 @media only screen and (max-width: 1000px) {
@@ -81,4 +125,18 @@ body {
     #house {
         width: 30vw;
     }
+}
+
+@keyframes shake {
+    0% { transform: translate(1px, 1px) rotate(0deg); }
+    10% { transform: translate(-1px, -2px) rotate(-1deg); }
+    20% { transform: translate(-3px, 0px) rotate(1deg); }
+    30% { transform: translate(3px, 2px) rotate(0deg); }
+    40% { transform: translate(1px, -1px) rotate(1deg); }
+    50% { transform: translate(-1px, 2px) rotate(-1deg); }
+    60% { transform: translate(-3px, 1px) rotate(0deg); }
+    70% { transform: translate(3px, 1px) rotate(-1deg); }
+    80% { transform: translate(-1px, -1px) rotate(1deg); }
+    90% { transform: translate(1px, 2px) rotate(0deg); }
+    100% { transform: translate(1px, -2px) rotate(-1deg); }
 }

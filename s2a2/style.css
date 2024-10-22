@@ -28,16 +28,11 @@ body {
 
 input {
     display: none;
-  }
+}
 
 #leaves {
     width: 25vw;
     height: auto;
-}
-
-#leaves:hover {
-    animation: shake 1.5s;
-    animation-iteration-count: infinite;
 }
 
 #leaves-label {
@@ -45,16 +40,16 @@ input {
     position: relative;
     width: 25vw;
     height: auto;
-    background-color: lightblue;
-    border: 1px black solid;
 }
   
 #pigpen {
+    display: flex;
     position: absolute;
+    bottom: 0;
     width: 25vw;
     height: auto;
-    background-color: lightblue;
-    border: 1px black solid;
+    align-items: center;
+    justify-content: center;
     opacity: 0;
 }
   
@@ -67,26 +62,20 @@ input {
     height: auto;
 }
 
-#tree:hover {
-    animation: shake 1.5s;
-    animation-iteration-count: infinite;
-}
-
 #tree-label {
     display: block;
     position: relative;
     width: 30vw;
     height: auto;
-    background-color: lightblue;
-    border: 1px black solid;
 }
 
 #woodstock {
+    display: flex;
     position: absolute;
-    width: 30vw;
+    top: 0;
+    left: 10vw;
+    width: 5vw;
     height: auto;
-    background-color: lightblue;
-    border: 1px black solid;
     opacity: 0;
 }
 
@@ -99,9 +88,24 @@ input {
     height: auto;
 }
 
-#house:hover {
-    animation: shake 1.5s;
-    animation-iteration-count: infinite;
+#house-label {
+    display: block;
+    position: relative;
+    width: 15vw;
+    height: auto;
+}
+
+#snoopy {
+    display: flex;
+    position: absolute;
+    bottom: 0;
+    width: 10vw;
+    height: auto;
+    opacity: 0;
+}
+
+#house:checked ~ #house-label > #snoopy {
+    opacity: 1;
 }
 
 @media only screen and (max-width: 1000px) {
@@ -114,7 +118,7 @@ input {
         height: auto;
     }
 
-    #leaves {
+    #leaves, #pigpen {
         width: 50vw;
     }
 
@@ -122,12 +126,20 @@ input {
         width: 60vw;
     }
 
+    #woodstock {
+        width: 10vw;
+    }
+
     #house {
         width: 30vw;
     }
+
+    #snoopy {
+        width: 20vw;
+    }
 }
 
-@keyframes shake {
+/* @keyframes shake {
     0% { transform: translate(1px, 1px) rotate(0deg); }
     10% { transform: translate(-1px, -2px) rotate(-1deg); }
     20% { transform: translate(-3px, 0px) rotate(1deg); }
@@ -139,4 +151,4 @@ input {
     80% { transform: translate(-1px, -1px) rotate(1deg); }
     90% { transform: translate(1px, 2px) rotate(0deg); }
     100% { transform: translate(1px, -2px) rotate(-1deg); }
-}
+} */

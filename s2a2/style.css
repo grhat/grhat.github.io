@@ -2,6 +2,15 @@ body {
     background-color: lightblue;
 }
 
+#title {
+    font-size: calc(25px + 4vw);
+    font-family: "Caveat";
+    font-optical-sizing: auto;
+    font-style: normal;
+    text-align: center;
+    padding: 5vh;
+}
+
 .wrapper {
     display: flex;
     flex-wrap: wrap;
@@ -15,15 +24,6 @@ body {
     height: 30vw;
     align-items: center;
     justify-content: center;
-}
-
-#title {
-    font-size: calc(25px + 4vw);
-    font-family: "Caveat";
-    font-optical-sizing: auto;
-    font-style: normal;
-    text-align: center;
-    padding: 5vh;
 }
 
 input {
@@ -41,6 +41,12 @@ input {
     width: 25vw;
     height: auto;
 }
+
+#leaves-label:hover {
+    cursor: pointer;
+    animation: shake 1.5s;
+    animation-iteration-count: infinite;
+}
   
 #pigpen {
     display: flex;
@@ -48,11 +54,13 @@ input {
     bottom: 0;
     width: 25vw;
     height: auto;
-    align-items: center;
-    justify-content: center;
     opacity: 0;
 }
   
+#leaves:checked ~ #leaves-label:hover {
+    animation: none;
+}
+
 #leaves:checked ~ #leaves-label > #pigpen {
     opacity: 1;
 }
@@ -69,6 +77,12 @@ input {
     height: auto;
 }
 
+#tree-label:hover {
+    cursor: pointer;
+    animation: shake 1.5s;
+    animation-iteration-count: infinite;
+}
+
 #woodstock {
     display: flex;
     position: absolute;
@@ -77,6 +91,10 @@ input {
     width: 5vw;
     height: auto;
     opacity: 0;
+}
+
+#tree:checked ~ #tree-label:hover {
+    animation: none;
 }
 
 #tree:checked ~ #tree-label > #woodstock {
@@ -95,6 +113,12 @@ input {
     height: auto;
 }
 
+#house-label:hover {
+    cursor: pointer;
+    animation: shake 1.5s;
+    animation-iteration-count: infinite;
+}
+
 #snoopy {
     display: flex;
     position: absolute;
@@ -102,6 +126,10 @@ input {
     width: 10vw;
     height: auto;
     opacity: 0;
+}
+
+#house:checked ~ #house-label:hover {
+    animation: none;
 }
 
 #house:checked ~ #house-label > #snoopy {
@@ -114,32 +142,23 @@ input {
     }
 
     .grid {
-        width: 100vw;
-        height: auto;
+        width: 100%;
     }
 
-    #leaves, #pigpen {
-        width: 50vw;
-    }
-
-    #tree {
-        width: 60vw;
+    #leaves, #pigpen, #tree, #house {
+        width: 100%;
     }
 
     #woodstock {
-        width: 10vw;
-    }
-
-    #house {
-        width: 30vw;
+        width: 25%;
     }
 
     #snoopy {
-        width: 20vw;
+        width: 75%;
     }
 }
 
-/* @keyframes shake {
+@keyframes shake {
     0% { transform: translate(1px, 1px) rotate(0deg); }
     10% { transform: translate(-1px, -2px) rotate(-1deg); }
     20% { transform: translate(-3px, 0px) rotate(1deg); }
@@ -151,4 +170,4 @@ input {
     80% { transform: translate(-1px, -1px) rotate(1deg); }
     90% { transform: translate(1px, 2px) rotate(0deg); }
     100% { transform: translate(1px, -2px) rotate(-1deg); }
-} */
+}

@@ -1,0 +1,53 @@
+.bagel-fat-one-regular {
+    font-family: "Bagel Fat One", system-ui;
+    font-weight: 400;
+    font-style: normal;
+}
+
+header {
+    width: 100vw;
+    height: 50vh;
+    padding-top: 2vw;
+    padding-bottom: 2vw;
+    font-family: "DynaPuff", system-ui;
+    font-size: 10vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #FFA500;
+}
+
+body {
+    position: relative;
+    margin: 0;
+    font-family: "Lato", sans-serif;
+    font-size: 5vw;
+    text-align: center;
+}
+  
+.imageroweven, .imagerowodd {
+    position: sticky;
+    width: 100%;
+    height: 100vh;
+    top: 0px;
+}
+  
+.imageroweven {
+    background-color: #FFEECF;
+}
+  
+.imagerowodd {
+    background-image: linear-gradient(#FFC0CB,#FFA500);
+}
+
+.container {
+    width: 100vw;
+    height: 50vh;
+    background-color: #FFEECF;
+}
+
+#sun {
+    width: 50vh;
+    height: auto;
+}
+  

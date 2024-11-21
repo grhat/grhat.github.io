@@ -1,16 +1,8 @@
-.bagel-fat-one-regular {
-    font-family: "Bagel Fat One", system-ui;
-    font-weight: 400;
-    font-style: normal;
-}
-
 header {
-    width: 100vw;
-    height: 50vh;
-    padding-top: 2vw;
-    padding-bottom: 2vw;
+    width: 100%;
+    height: 100%;
     font-family: "DynaPuff", system-ui;
-    font-size: 10vw;
+    font-size: 8vw;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -20,34 +12,96 @@ header {
 body {
     position: relative;
     margin: 0;
-    font-family: "Lato", sans-serif;
-    font-size: 5vw;
+    font-family: "Open Sans", sans-serif;
+    font-size: 4vw;
     text-align: center;
 }
-  
-.imageroweven, .imagerowodd {
+
+.row1, .row2 {
     position: sticky;
     width: 100%;
-    height: 100vh;
-    top: 0px;
+    height: 100%;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
-  
-.imageroweven {
-    background-color: #FFEECF;
+
+.row1 {
+    background-image: linear-gradient(#B1DDF1, #F9E49F);
 }
-  
-.imagerowodd {
+
+.row2 {
     background-image: linear-gradient(#FFC0CB,#FFA500);
 }
 
-.container {
-    width: 100vw;
-    height: 50vh;
-    background-color: #FFEECF;
+#cloud {
+    position: absolute;
+    width: 30vw;
+    height: auto;
+    top: 0;
+    animation-name: cloud;
+    animation-duration: 9s;
+    animation-iteration-count: infinite;
+}
+
+#cloud2 {
+    position: absolute;
+    width: 25vw;
+    height: auto;
+    top: 45vh;
+    animation-name: cloud2;
+    animation-duration: 8s;
+    animation-iteration-count: infinite;
+}
+
+#cloud3 {
+    position: absolute;
+    width: 35vw;
+    height: auto;
+    top: 50vh;
+    animation-name: cloud3;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
 }
 
 #sun {
-    width: 50vh;
+    position: absolute;
+    width: 20vw;
+    height: auto;
+    top: 0;
+    right: 0;
+    animation-name: sun;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+
+#connect {
+    position: relative;
+    width: 40vw;
     height: auto;
 }
-  
+
+@keyframes cloud {
+    0%   {top: 0; left: 0;}
+    50%  {top: -3vh; left: 20vw;}
+    100% {top: 0; left: 0;}
+}
+
+@keyframes cloud2 {
+    0%   {right: 0;}
+    50%  {right: 20vw;}
+    100% {right: 0;}
+}
+
+@keyframes cloud3 {
+    0%   {top: 50vh; left: 0;}
+    50%  {top: 53vh; left: 15vw;}
+    100% {top: 50vh; left: 0;}
+}
+
+@keyframes sun {
+    0%   {transform: rotate(0deg); }
+    50%  {transform: rotate(15deg);}
+    100% {transform: rotate(0deg);}
+}

@@ -35,44 +35,36 @@ body {
     background-image: linear-gradient(#FFC0CB,#FFA500);
 }
 
-#cloud {
+#cloud, #cloud2, #cloud3 {
     position: absolute;
-    width: 30vw;
+    width: 50%;
     height: auto;
-    top: 0;
-    animation-name: cloud;
-    animation-duration: 9s;
+    animation-duration: 6s;
+    animation-fill-mode: forwards;
     animation-iteration-count: infinite;
+}
+
+#cloud {
+    animation-name: cloud;
 }
 
 #cloud2 {
-    position: absolute;
-    width: 25vw;
-    height: auto;
-    top: 45vh;
     animation-name: cloud2;
-    animation-duration: 8s;
-    animation-iteration-count: infinite;
 }
 
 #cloud3 {
-    position: absolute;
-    width: 35vw;
-    height: auto;
-    top: 50vh;
     animation-name: cloud3;
-    animation-duration: 10s;
-    animation-iteration-count: infinite;
 }
 
 #sun {
     position: absolute;
-    width: 20vw;
+    width: 25%;
     height: auto;
     top: 0;
     right: 0;
     animation-name: sun;
     animation-duration: 4s;
+    animation-timing-function: ease-in-out;
     animation-iteration-count: infinite;
 }
 
@@ -83,21 +75,21 @@ body {
 }
 
 @keyframes cloud {
-    0%   {top: 0; left: 0;}
-    50%  {top: -3vh; left: 20vw;}
-    100% {top: 0; left: 0;}
+    0%   {top: 5vh; left: 15vw;}
+    50%  {top: 5vh; left: -50vw}
+    100% {top: 5vh; left: 15vw;}
 }
 
 @keyframes cloud2 {
-    0%   {right: 0;}
-    50%  {right: 20vw;}
-    100% {right: 0;}
+    0%   {top: 25vh; right: 15vw;}
+    50%  {top: 25vh; right: -50vw;}
+    100% {top: 25vh; right: 15vw;}
 }
 
 @keyframes cloud3 {
-    0%   {top: 50vh; left: 0;}
-    50%  {top: 53vh; left: 15vw;}
-    100% {top: 50vh; left: 0;}
+    0%   {top: 25vh; left: 15vw;}
+    50%  {top: 25vh; left: -50vw;}
+    100% {top: 25vh; left: 15vw;}
 }
 
 @keyframes sun {

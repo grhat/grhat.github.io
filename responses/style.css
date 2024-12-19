@@ -1,0 +1,92 @@
+body {
+    background-color: #B0D4E8;
+}
+
+.wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.grid {
+    display: flex;
+    flex-direction: column;
+    width: 32vw;
+    height: 42vw;
+    border: 2px #FB5012 solid;
+    background: white;
+}
+
+.grid:hover {
+    background: #FB5012;
+    transform: scale(1.1);
+}
+
+.grid:hover > h2 {
+    color: white;
+}
+
+.grid:hover > p {
+    color: white;
+}
+
+h1 {
+    margin: 0;
+    padding: 0;
+    font-family: "Gasoek One", sans-serif;
+    font-weight: 400;
+    font-size: 9vw;
+    line-height: 1;
+    color: #FB5012;
+    text-align: center;
+    cursor: default;
+}
+
+h2 {
+    font-family: "Merriweather", serif;
+    font-weight: 700;
+    font-size: 3vw;
+    line-height: .5;
+    color: #FB5012;
+    text-align: center;
+    cursor: default;
+}
+
+p {
+    margin: 1vw;
+    font-family: "Merriweather", serif;
+    font-weight: 400;
+    font-size: 1vw;
+    color: #FB5012;
+    cursor: default;
+}
+
+span {
+    font-family: "Merriweather", serif;
+    font-weight: 400;
+    font-size: 300%;
+    line-height: .8;
+}
+
+@media only screen and (max-width: 1000px) {
+    .wrapper {
+      flex-direction: column;
+    }
+
+    .grid {
+        width: 100%;
+        transform: none;
+    }
+
+    .grid:hover {
+        transform: none;
+    }
+
+    h2 {
+        font-size: calc(3vw + 10px);
+    }
+
+    p {
+        font-size: calc(1vw + 3px);
+    }
+}

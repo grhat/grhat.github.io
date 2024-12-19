@@ -1,3 +1,85 @@
 body {
-    background-color: lightpink;
+    background-color: #B0D4E8;
 }
+
+.wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.grid {
+    display: flex;
+    width: 30vw;
+    height: 30vw;
+    justify-content: center;
+    align-items: center;
+}
+
+.grid:hover {
+    background: #FB5012;
+}
+
+h1 {
+    margin: 0;
+    padding: 0;
+    font-family: "Gasoek One", sans-serif;
+    font-weight: 400;
+    font-size: 15vw;
+    line-height: .8;
+    color: #FB5012;
+    text-align: center;
+    cursor: default;
+}
+
+h2 {
+    margin: 0;
+    padding-top: 1vw;
+    padding-left: 3vw;
+    font-family: "Merriweather", serif;
+    font-weight: 400;
+    font-size: 2vw;
+    color: #FB5012;
+    cursor: default;
+}
+
+.image {
+    width: 25vw;
+    height: auto;
+    filter: brightness(90%) sepia(50%);
+}
+
+#cow {
+    width: 30vw;
+}
+
+#comic {
+    width: 20vw;
+}
+
+#sundial, #snowflake {
+    width: 17vw;
+}
+
+#caption {
+    position: absolute;
+    padding: 5px;
+    font-family: "Merriweather", serif;
+    font-weight: 300;
+    font-size: 2vw;
+    border: 2px #FB5012 solid;
+    background: white;
+}
+
+a {
+    font-size: 2vw;
+    color: #FB5012;
+    text-decoration: none;
+}
+
+a:visited { 
+    color: #FB5012;
+    text-decoration: none;
+} 
